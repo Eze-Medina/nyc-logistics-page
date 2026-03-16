@@ -1,4 +1,5 @@
 import { Outlet } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
 import { ScrollToTop } from "./ScrollTop/ScrollTop";
 import { Navbar } from "./navbar/Navbar";
 import { Footer } from "./footer/Footer";
@@ -9,6 +10,7 @@ import style from './layout.module.css'
 export const Layout = () => {
   return (
     <div className={style.layout}>
+      <Analytics />
       <ScrollToTop />
       <Navbar />
       <main className="layout__main">
