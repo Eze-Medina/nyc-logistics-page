@@ -1,0 +1,28 @@
+.question_container {
+  border-bottom: 1px solid rgb(158, 157, 157);
+}
+
+.box {
+  width: 100%;
+}
+
+.box_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.box_content p {
+  color: black;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.open {
+  max-height: 300px;
+}

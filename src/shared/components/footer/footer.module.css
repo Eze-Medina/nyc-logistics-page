@@ -1,0 +1,127 @@
+.footer {
+  background-color: #5B2572;
+  color: white;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+}
+
+.footer_container_1{
+  margin-top: 40px;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(224, 224, 224);
+}
+
+.footer_container_1 .footer_heading {
+  margin: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.footer_container_1 .footer_text {
+  text-align: center;
+  padding: 0px 40px;
+  font-size: 1.3em;
+  margin: 15px 0px;
+}
+
+.footer_container_1 .footer_button {
+  font-weight: 600;
+  font-family: roboto;
+  font-size: 1em;
+  background-color: #F4B400;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px 40px;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.footer_container_2{
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_brand {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.footer_description {
+  margin: 0px;
+  font-size: 0.9em;
+  color: rgb(224, 224, 224);
+}
+
+.footer_heading {
+  margin-bottom: 3px;
+  font-size: 1em;
+  color: black
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  list-style: none;
+  padding: 0px;
+  font-size: 0.9em;
+  color: rgb(224, 224, 224);
+}
+
+.footer_list .footer_item {
+  margin: 3px 0px;
+}
+
+.footer_list a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_list span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_contact {
+  font-style: normal;
+}
+
+.nose {
+  grid-column: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(151, 151, 151);
+}
+
+.nose span {
+  margin: 15px 0px;
+  font-size: 0.9em;
+  color: rgb(224, 224, 224);
+}
+
+
+@media (max-width: 520px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_container_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer_container_2 .footer_nav {
+    padding: 0px 15px;
+  }
+
+  .footer_container_2 .footer_nav:nth-child(2) {
+    padding: 0px;
+  }
+}
